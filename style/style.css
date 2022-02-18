@@ -43,10 +43,51 @@ table {
     border-spacing: 0;
 }
 /*  fin reset   */
+header, nav, footer
+{
+    display: flex;
+    align-items: center;
+    background-color: #090;
+}
+header, nav, footer
+{
+    justify-content: center;
+}
+nav,footer, .repat
+{
+    gap: 1rem;
+    margin-block: 1rem;
+}
 header
+{
+    margin-bottom: 1rem;
+}   
+footer, .content_repat
+{
+    padding-inline: 1rem;
+}
+.repat, .content_repat
+{
+    display: flex;
+    align-items: center;
+}
+
+.content_repat
+{
+    justify-content: space-between;
+}
+.entre, .plat, .desser
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: auto;
     align-items: center;
+}
+.repat
+{
+    margin: 1rem;
+}
+.taille_entre, .taille_plat, .taille_desser
+{
+    height: 5rem ;
 }
