@@ -12,7 +12,7 @@
         <section class="photoNom">
             <img src="media/header/bg_img.webp" class="backgroundMobile">
             <figure><img src="media/header/photoProfil.webp" class="photo"><figcaption>@Alice.p</figcaption> </figure>
-        </section><br>
+        <br></section>
     
         <section class="btnDesktop">
             <figure><img src="media/Logo.svg" class="logoDesktop"></figure>
@@ -28,26 +28,26 @@
         <nav class="planningList">
             <input type="button" value="planning" id="planning">
             <input type="button" value="liste de course" id="listeCourse">
-        </nav>
-        <br>
+        </nav><br>
+
         <section class='jourSemaine'>
-            <section id="chaquePetitBoutons">
-                <input class="petitBouton" id="lundi" type="button" value="Lun">
-                <input class="petitBouton" type="button" value="Mar">
-                <input class="petitBouton" type="button" value="Mer">
-                <input class="petitBouton" type="button" value="Jeu">
-                <input class="petitBouton" type="button" value="Ven">
-                <input class="petitBouton" type="button" value="Sam">
-                <input class="petitBouton" type="button" value="Dim">
-            </section>
+
+            <input class="petitBouton" id="lundi" type="button" value="Lun">
+            <input class="petitBouton" type="button" value="Mar">
+            <input class="petitBouton" type="button" value="Mer">
+            <input class="petitBouton" type="button" value="Jeu">
+            <input class="petitBouton" type="button" value="Ven">
+            <input class="petitBouton" type="button" value="Sam">
+            <input class="petitBouton" type="button" value="Dim">
+
         
-            <input class="grosBouton" type="button" value="Lundi">
-            <input class="grosBouton" type="button" value="Mardi">
-            <input class="grosBouton" type="button" value="Mercredi">
-            <input class="grosBouton" type="button" value="Jeudi">
-            <input class="grosBouton" type="button" value="Vendredi">
-            <input class="grosBouton" type="button" value="Samedi">
-            <input class="grosBouton" type="button" value="Dimanche">
+            <input class="boutonDesktop" type="button" value="Lundi">
+            <input class="boutonDesktop" type="button" value="Mardi">
+            <input class="boutonDesktop" type="button" value="Mercredi">
+            <input class="boutonDesktop" type="button" value="Jeudi">
+            <input class="boutonDesktop" type="button" value="Vendredi">
+            <input class="boutonDesktop" type="button" value="Samedi">
+            <input class="boutonDesktop" type="button" value="Dimanche">
         </section>
         
     <article class="rubrique" id="rubrique">
@@ -61,50 +61,41 @@
             <div class="dejeuner">
                 <h2>Dejeuner<img src="media/body/btn_ajouter.svg" class="plus"></h2>
             </div>
-            <div class="content_repat">
-                <div class="entre">
-                    <img src="" alt="entre_dejeuner">
-                    <p>nom de l'entre</p>
-                </div>
-                <div class="">
-                    <img src="media/body/" alt="plat_dejeuner">
-                    <p>nom du plat</p>
-                </div>
-                <div class="desser">                    
-                    <img src="" alt="desser_dejeuner" class="taille_desser">
-                    <p>nom du desser</p>
-                </div>
+            <div class="troisRecette">
+                <figure><img src="media/body/photoDej1.webp" alt="entre_dejeuner"><figcaption>Avocat Saumon</figcaption></figure>               
+                <figure><img src="media/body/photoDej2.webp" alt="plat_dejeuner"><figcaption>Wok au Poulet</figcaption></figure>
+                <figure><img src="media/body/photoDej3.webp" alt="desser_dejeuner"><figcaption>Bol gourmand</figcaption></figure>                                    
             </div>
         </section>
         <section>
             <div class="diner">
                 <h2>Diner<img src="media/body/btn_ajouter.svg" alt="ajouter" class="plus"></h2>
             </div>
-            <div class="content_repat">
-                <div class="entre">
-                    <img src="" alt="entre_dinner">
-                    <p>nom de l'entre</p>
-                </div>
-                <div class="plat">
-                    <img src="media/body/" alt="plat_dinner" class="taille_plat">
-                    <p>nom du plat</p>
-                </div>
-                <div class="desser">
-                    <img src="" alt="desser_dinner" class="taille_desser">
-                    <p>nom du desser</p>
-                </div>
+            <div class="troisRecette">            
+                    <figure><img src="media/body/photoDiner1.webp" alt="entre_dinner"><figcaption>Toast avocat</figcaption></figure>
+                    <figure><img src="media/body/photoDiner2.webp" alt="plat_dinner"><figcaption>Riz au hommous et légumes</figcaption></figure>
+                    <figure><img src="media/body/photoDiner3.webp" alt="desser_dinner"><figcaption>Gaufre fourmande</figcaption></figure>
             </div>
         </section>
     </article>
         <aside class="ingredients" id="ingredients">
-
+            <section class="filtrer">
+                <input class="btnSemaine" id="btnSemaine" type="button" value="Toute la semaine">
+            <br></section>
+            <section class="checkbox">
+                <input type="checkbox"> Poulet 600g<br>
+                <input type="checkbox"> Oignon 100g<br>
+                <input type="checkbox"> Poivron 100g<br>
+                <input type="checkbox"> Carotte 200g<br>
+                <input type="checkbox"> Sauce soja 2 cuillères<br>
+                <input type="checkbox"> Tortilllas 4 pièces<br>
+                <input type="checkbox"> Avocat 4<br>
+                <input type="checkbox"> Ail 2 gousses<br>
+            </section>
         </aside>
     </main>
     <script src="js/app.js"></script>
     <footer>
-        <!-- <section class=".bottom">
-            
-        </section> -->
         <div class="menuIcon acceuil">
             <svg width="auto" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon_home">
                 <path d="M34.0021 30.8393V18.4715C34.0022 17.611 33.8244 16.7596 33.4796 15.9694C33.1349 15.1791 32.6304 14.4668 31.9971 13.8758L20.1996 2.86395C19.6054 2.30914 18.8187 2 18.001 2C17.1833 2 16.3967 2.30914 15.8025 2.86395L4.00493 13.8758C3.37165 14.4668 2.86718 15.1791 2.52243 15.9694C2.17768 16.7596 1.99991 17.611 2 18.4715V30.8393C2 31.6776 2.33716 32.4815 2.93732 33.0743C3.53747 33.667 4.35146 34 5.20021 34H30.8019C31.6506 34 32.4646 33.667 33.0648 33.0743C33.6649 32.4815 34.0021 31.6776 34.0021 30.8393Z" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
