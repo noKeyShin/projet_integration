@@ -19,75 +19,439 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/*  fin reset   */
-header, nav, footer
+
+/* 
+@font-face 
 {
-    display: flex;
-    align-items: center;
-    background-color: #090;
+    font-family: "Gastromond";
+    src: url("Gastromond.woff2") format("woff2"), url("Gastromond.woff") format("woff");
 }
-header, nav, footer
+   */
+/* @font-face 
 {
-    justify-content: center;
+    font-family: "Superclarendon";
+    src: url("./Superclarendon-Regular.woff2") format("woff2"), url("Superclarendon-Regular.woff")format("woff");
 }
-nav,footer, .repat
+   */
+
+body
 {
-    gap: 1rem;
-    margin-block: 1rem;
-}
-header
-{
-    margin-bottom: 1rem;
-}   
-footer, .content_repat
-{
-    padding-inline: 1rem;
-}
-.repat, .content_repat
-{
-    display: flex;
-    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 5rem;
 }
 
-.content_repat
-{
-    justify-content: space-between;
+
+header .backgroundMobile{
+position: absolute;
+width: 100%;
 }
-.entre, .plat, .desser
-{
+header .photoNom figcaption{
+    /* font-family: "Superclarendon"; */
+    text-align: center;
+}
+
+
+header .photo{
     display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
+    padding-top: 1rem;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: auto;
 }
-.repat
+
+.planningList
 {
-    margin: 1rem;
+    border-radius: 30px;
+    width:15em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #62755B;
+    text-align: center;
 }
-.taille_entre, .taille_plat, .taille_desser
+.planningList input
 {
-    height: 5rem ;
+    padding: 9px;
+    border-radius: 30px;
+    /* font-family: "Superclarendon"; */
+    color: white;
+    border: 0px
 }
+.planningList #planning
+{
+    background-color:#c3f3b779 ;
+    width: 40%;
+}
+.planningList #listeCourse
+{
+    background-color:#62755B ;
+}
+
+.petitBouton, .btnSemaine
+{
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #62755B;
+    text-align: center;
+    /* font-family: "Superclarendon"; */
+    color: white;
+    border: 0px;
+    padding: 0.5rem;
+    font-size: 10px;
+}
+.btnSemaine
+{
+    padding-top: 1rem;
+}
+
+#lundi
+{
+    background-color: #c3f3b779;
+}
+.jourSemaine
+{
+    background-color: #62755B;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    width:20rem;
+}
+
+
+
+
+footer{
+    background-color: #62755B;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+}
+
+.menuIcon { 
+    text-align: center;
+    color: #FFFF; 
+    display: inline-block;
+    justify-content: center;
+    padding: 2%
+  /*  position: 0;*/
+} 
+
+.livre{
+    color: #F0BC00;
+}
+
+
+.top { 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.top th{ 
+    justify-content: center;
+}
+
+main
+{
+    font-family: "Superclarendon";
+}
+
+h2
+{
+    /* font-family: "Gastromond"; */
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+
+
+.uneRecette img
+{
+    width: 40em;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    max-width: 70%;
+}
+.uneRecette
+{
+justify-content: center;
+text-align: center;
+display: flex;
+}
+
+
+.troisRecette img
+{
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+
+}
+.troisRecette
+{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.grosBouton
+{
+    display: none;
+}
+
+
+
+
+.checkbox{
+    margin-left: 20%;
+}
+
+.filtrer{
+    text-align: center;
+
+}
+
+.ingredients
+{
+    display: none;
+    background-color: #62755B;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.visible
+{
+    display: block;
+}
+
+.btnDesktop
+{
+    display: none;
+}
+
+.plus
+{
+    padding-left: 0.5rem;;
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+
+
+
+@media screen and (min-width: 400px) 
+{
+    .planningList
+    {
+    width:16rem;
+    }
+    .planningList input
+    {
+    padding: 14px ;
+    }
+
+    .jourSemaine
+    {
+    width:23rem;
+    }
+
+    .petitBouton
+    {
+    padding: 1rem;
+    font-size: 11px;
+    }   
+
+
+.checkbox{
+    margin-left: 25%;
+    font-size: 1rem;
+}
+
+} 
+
+@media screen and (min-width: 600px) {
+    .planningList
+    {
+    width:20rem;
+    }
+    .planningList input
+    {
+    padding: 15px ;
+    }
+    .planningList #planning
+{
+    background-color:#c3f3b779 ;
+    width: 50%;
+}
+
+.jourSemaine
+{
+width:26rem;
+}
+
+.petitBouton
+{
+padding: 1.1rem;
+font-size: 12px;
+}   
+
+h1
+{
+    font-size: 1.6rem;
+}
+
+.checkbox{
+    margin-left: 30%;
+    font-size: 1.3rem;
+}
+
+}
+
+
+@media screen and (min-width: 750px) {
+
+    .photoNom
+    {
+        display: none;
+    }
+
+    footer {
+      display: none;
+    }
+    body{
+        padding-bottom: 0rem;
+    }
+
+    header{
+        background-color: gray;
+        position: sticky;
+        justify-content: center;
+        text-align: center;
+        height: 6rem;
+
+    }
+
+
+    header .backgroundMobile{
+    display: none;
+    }
+
+    .logoDesktop
+    {
+        height: 4rem;
+        width: auto;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .photoDesktop 
+    {
+        position: relative;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+
+    .photoDesktop img
+    {
+        padding-top: 1rem;
+        height: 4rem;
+        width: auto;
+        padding-right: 1rem;
+    }
+
+    .photoDesktop figcaption
+    {
+        padding-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .autreDesktop
+    {
+        justify-content: center;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+
+
+    header .btnDesktop{
+        display: inline-block;
+        display: flex;
+        /* font-family: "Superclarendon"; */
+    }
+
+    .planningList
+    {
+        display: none;
+    }
+
+    main
+    {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .jourSemaine
+    {
+        flex-direction: column;
+        width: 15%;
+    }
+
+
+    .petitBouton
+    {
+        display: none;
+    }
+
+    .grosBouton
+    {
+        display:block;
+        width: 40%;
+        height: 6.8%;
+        position: fixed;
+    }
+
+
+    .ingredients
+    {
+        display: none;
+        background-color: #62755B;
+        width: 25%;
+    }
+
+
+    .visible, .hidden
+    {
+        display: block;
+    }
+
+    .visible
+    {
+        background-color: red;
+    }
+
+    .hidden
+    {
+        background-color: blue;
+    }
+    
+
+  }
